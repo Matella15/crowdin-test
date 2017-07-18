@@ -1,0 +1,53 @@
+--- layout: default title: Recursos ---<section>
+  <div class="curriculum">
+    <header>
+      <div class="container">
+        <h1>Recursos</h1>
+      </div>
+    </header>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="well">
+          <p class="center-text">Parece que en estos momentos no tienes recursos disponibles. ¿Por qu&eacute; no crear recursos mediante Contribuciones?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="menu">
+    <div class="container">
+      <ul>{% for resources in page.resources %}<li><a class="btn btn-alt-link" href="#{{ resources[0] | downcase | replace: ' ', '-' }}">{{ resources[0] }}</a></li>{% endfor %}</ul>
+    </div>
+  </nav>
+</section><!-- <section>
+  <div class="page-break">
+  </div>
+</section> --> <!--
+<section>
+  <div class="container">
+    <div class="panel panel-resources">
+      <div class="panel-heading" id="{{ resources[0] | downcase | replace: ' ', '-' }}"><h3>{{ resources[0] }}</h3></div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <h4>heading</h4>
+
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right" href ="{{ site.baseurl }}{{ resource.url }}"><span>Read</span>
+                    <div class="icon-arrow-circle-green">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section> -->
